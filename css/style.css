@@ -19,20 +19,56 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
   
 }
 
-/*BODY*/
-	body{
 
-	}
+body{
+	background-color: orange;
+	width: auto;
+    height: 100vh;
+}
 
-/*TOPO*/
-	header.topo{
-		
-	}
 
-/*RODAPÉ*/
-	
+header.topo{
+	width: 100%;
+	text-align: center;
+}
+
+figcaption{
+	display: none;
+}
+
 
 /*PÁGINA INICIAL*/
-	div.pg-home{
-		
-	}
+div.pg-home{
+	height: 100%;
+}
+
+.pg-home section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+    justify-content: center;
+}
+
+.pg-home section ul{
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 858px;
+	justify-content: center;
+}
+
+.usuario figure img{
+	width: 186px;
+	height: 186px;
+}
+
+.pg-home section ul li{
+	margin: 20px 10px;
+	width: 186px;
+	text-align: center;
+}
+
+.addPerfil{
+	padding-bottom: 42px;
+	text-align: center;
+}
