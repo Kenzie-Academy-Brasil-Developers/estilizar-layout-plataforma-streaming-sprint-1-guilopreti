@@ -14,25 +14,116 @@ SUGESTÃO DE ESTRUTURAÇÃO BASE
 **** PÁGINA INICIAL
 */
 
-/* VARIÁVEIS */
-:root{
-  
+body{
+	background-color: orange;
+	width: auto;
+    height: 100vh;
+	font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif;
+	color: white;
+	background-color: #00002E;
 }
 
-/*BODY*/
-	body{
 
-	}
+header.topo{
+	width: 100%;
+	text-align: center;
+	background-image: linear-gradient(to bottom, black, transparent, transparent);
+}
 
-/*TOPO*/
-	header.topo{
-		
-	}
 
-/*RODAPÉ*/
-	
+figcaption{
+	display: none;
+}
+
 
 /*PÁGINA INICIAL*/
-	div.pg-home{
-		
+div.pg-home{
+	margin-top: 55px;
+}
+
+.pg-home header h2{
+	font-size: 51px;
+    font-weight: 700;
+    margin-bottom: 45px;
+}
+
+.pg-home section{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+    justify-content: center;
+}
+
+.pg-home section ul{
+	display: flex;
+	flex-wrap: wrap;
+	max-width: 858px;
+	justify-content: center;
+}
+
+.usuario figure img{
+	width: 186px;
+	height: 186px;
+}
+
+.pg-home section ul li{
+	margin: 20px 38px;
+	width: 186px;
+	text-align: center;
+}
+
+.addPerfil{
+	padding-bottom: 42px;
+	text-align: center;
+}
+
+.addPerfil figure{
+	margin-top: 42px;
+    margin-bottom: 36px;
+}
+
+.pg-home section ul li h3{
+	font-size: 28px;
+    padding-top: 30px;
+}
+
+footer{
+	margin-bottom: 10px;
+}
+
+footer button{
+	background-color: #00002E;
+    color: white;
+    border: 2px solid white;
+	padding: 17px 41px;
+    font-size: 23px;
+	margin-top: 25px;
+}
+
+
+@media (min-width: 822px) {
+	header.topo{
+		width: 100%;
+		text-align: start;
 	}
+	.pg-home section ul li {
+		margin: 20px 14px;
+	}
+	.addPerfil figure img {
+		width: 90px;
+		height: 90px;
+	}
+	.addPerfil figure {
+		margin-bottom: 54px;
+	}
+	.pg-home header h2{
+		font-size: 75px;
+	}
+	div.pg-home {
+		margin-top: 65px;
+	}
+	.usuario img:hover {
+		border: 3px solid gray;
+	}
+}
